@@ -1,0 +1,10 @@
+torch
+torchaudio
+tensorflow
+librosa
+openl3
+matplotlib
+seaborn
+pesq
+pystoi
+scikit-learn
