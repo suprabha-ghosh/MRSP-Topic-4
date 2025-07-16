@@ -72,7 +72,7 @@ def visualize_metrics(results_df, output_dir, prefix=""):
 
 def visualize_degradation_comparison(results_df, output_dir, prefix=""):
     """Create plots comparing different degradation types"""
-    plt.figure(figsize=(14, 10))
+    fig, axes = plt.subplots(2, 1, figsize=(14, 10))
     
     # Plot 1: Degradation Type vs Similarities
     plt.subplot(2, 1, 1)
@@ -104,9 +104,11 @@ def visualize_degradation_comparison(results_df, output_dir, prefix=""):
     plt.legend()
     plt.grid(True, alpha=0.3)
     
-    plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, f'{prefix}degradation_comparison.png'), 
-                dpi=300, bbox_inches='tight')
+    # Move legend outside
+    axes[0].legend(loc='upper left', bbox_to_anchor=(1.02, 1), borderaxespad=0)
+    axes[1].legend(loc='upper left', bbox_to_anchor=(1.02, 1), borderaxespad=0)
+    plt.tight_layout(rect=[0, 0, 0.85, 1])  # Make room for legends
+    plt.savefig(os.path.join(output_dir, f'{prefix}degradation_comparison.png'), dpi=300, bbox_inches='tight')
     plt.close()
 
 def visualize_quality_comparison(results_df, output_dir, prefix=""):
@@ -144,10 +146,11 @@ def visualize_quality_comparison(results_df, output_dir, prefix=""):
         ax.set_title(f'{metric.replace("_", " ")} by Quality Level')
         ax.set_xticks(x)
         ax.set_xticklabels(degradation_types)
-        ax.legend()
+        # Move legend outside
+        ax.legend(loc='upper left', bbox_to_anchor=(1.02, 1), borderaxespad=0)
         ax.grid(True, alpha=0.3)
     
-    plt.tight_layout()
+    plt.tight_layout(rect=[0, 0, 0.85, 1])  # Make room for legends
     plt.savefig(os.path.join(output_dir, f'{prefix}quality_comparison.png'),
                 dpi=300, bbox_inches='tight')
     plt.close()
