@@ -34,7 +34,8 @@ extract_embeddings.py    # Add degradations, extract OpenL3 and VGGish embedding
 calculate_metrics.py     # Compute PESQ/STOI, cosine similarity, visualize
 visualize_results.py     # Generate plots, tables, analysis report
 
-test_audio/              # Original and degraded audio files
+original_audio/          # Original raw audio files
+test_audio/              # 16Hz mono and degraded audio files
 openl3_embeddings/       # .npy files for OpenL3 embeddings
 vggish_embeddings/       # .npy files for VGGish embeddings
 results/                 # Scatter plots, correlation heatmaps, CSVs, report
