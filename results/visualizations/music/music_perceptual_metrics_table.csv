@@ -1,0 +1,10 @@
+Degradation_Type,PESQ,STOI
+Noise (Low),3.2965,0.9515
+Noise (High),1.7536,0.9124
+Noise (Extreme),1.3514,0.8829
+Bitrate (Low),3.3049,0.9983
+Bitrate (High),2.2840,0.8857
+Bitrate (Extreme),1.7505,0.8102
+Compression (Low),3.9361,0.9930
+Compression (High),3.2141,0.9468
+Compression (Extreme),1.3062,0.8157

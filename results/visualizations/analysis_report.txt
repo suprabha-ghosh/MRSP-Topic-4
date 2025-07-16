@@ -1,0 +1,120 @@
+Audio Quality Analysis Report
+==================================================
+
+Correlations:
+OpenL3 vs PESQ: 0.586
+OpenL3 vs STOI: 0.670
+VGGish vs PESQ: 0.746
+VGGish vs STOI: 0.298
+
+Statistical Summary:
+       OpenL3_Similarity  VGGish_Similarity  PESQ_Score  STOI_Score
+count          18.000000          18.000000   18.000000   18.000000
+mean            0.980419           0.924222    2.390841    0.930463
+std             0.013909           0.041266    1.013569    0.067692
+min             0.942038           0.807095    1.039968    0.810199
+25%             0.979058           0.908427    1.451167    0.883616
+50%             0.983887           0.939748    2.374957    0.949124
+75%             0.989108           0.951291    3.275888    0.994650
+max             0.991932           0.964370    4.070455    0.999997
+
+Perceptual Metrics Table:
+----------------------------------------
+     Degradation_Type   PESQ   STOI
+          Noise (Low) 2.4659 0.9995
+         Noise (High) 1.1986 0.9882
+      Noise (Extreme) 1.0658 0.9632
+        Bitrate (Low) 3.6559 0.9952
+       Bitrate (High) 2.7384 0.9047
+    Bitrate (Extreme) 2.0863 0.8405
+    Compression (Low) 4.0705 1.0000
+   Compression (High) 2.5166 0.9992
+Compression (Extreme) 1.0400 0.8613
+          Noise (Low) 3.2965 0.9515
+         Noise (High) 1.7536 0.9124
+      Noise (Extreme) 1.3514 0.8829
+        Bitrate (Low) 3.3049 0.9983
+       Bitrate (High) 2.2840 0.8857
+    Bitrate (Extreme) 1.7505 0.8102
+    Compression (Low) 3.9361 0.9930
+   Compression (High) 3.2141 0.9468
+Compression (Extreme) 1.3062 0.8157
+
+Similarity Metrics Table:
+----------------------------------------
+     Degradation_Type  OpenL3  VGGish
+          Noise (Low)  0.9919  0.9073
+         Noise (High)  0.9846  0.8818
+      Noise (Extreme)  0.9782  0.8593
+        Bitrate (Low)  0.9915  0.9585
+       Bitrate (High)  0.9831  0.9296
+    Bitrate (Extreme)  0.9784  0.9118
+    Compression (Low)  0.9858  0.9516
+   Compression (High)  0.9886  0.9463
+Compression (Extreme)  0.9420  0.8071
+          Noise (Low)  0.9904  0.9612
+         Noise (High)  0.9847  0.9425
+      Noise (Extreme)  0.9816  0.9319
+        Bitrate (Low)  0.9899  0.9504
+       Bitrate (High)  0.9810  0.9402
+    Bitrate (Extreme)  0.9763  0.9393
+    Compression (Low)  0.9832  0.9563
+   Compression (High)  0.9893  0.9644
+Compression (Extreme)  0.9470  0.8965
+
+Detailed Analysis by Degradation Type:
+----------------------------------------
+
+Noise (Low):
+OpenL3 Similarity: 0.992
+VGGish Similarity: 0.907
+PESQ Score: 2.466
+STOI Score: 0.999
+
+Noise (High):
+OpenL3 Similarity: 0.985
+VGGish Similarity: 0.882
+PESQ Score: 1.199
+STOI Score: 0.988
+
+Noise (Extreme):
+OpenL3 Similarity: 0.978
+VGGish Similarity: 0.859
+PESQ Score: 1.066
+STOI Score: 0.963
+
+Bitrate (Low):
+OpenL3 Similarity: 0.992
+VGGish Similarity: 0.958
+PESQ Score: 3.656
+STOI Score: 0.995
+
+Bitrate (High):
+OpenL3 Similarity: 0.983
+VGGish Similarity: 0.930
+PESQ Score: 2.738
+STOI Score: 0.905
+
+Bitrate (Extreme):
+OpenL3 Similarity: 0.978
+VGGish Similarity: 0.912
+PESQ Score: 2.086
+STOI Score: 0.840
+
+Compression (Low):
+OpenL3 Similarity: 0.986
+VGGish Similarity: 0.952
+PESQ Score: 4.070
+STOI Score: 1.000
+
+Compression (High):
+OpenL3 Similarity: 0.989
+VGGish Similarity: 0.946
+PESQ Score: 2.517
+STOI Score: 0.999
+
+Compression (Extreme):
+OpenL3 Similarity: 0.942
+VGGish Similarity: 0.807
+PESQ Score: 1.040
+STOI Score: 0.861
